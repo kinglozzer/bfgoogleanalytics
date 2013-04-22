@@ -1,0 +1,6 @@
+SiteConfig:
+  extensions:
+    - GoogleConfig
+ContentController:
+  extensions:
+    - GoogleLogger
