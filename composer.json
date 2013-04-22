@@ -1,0 +1,14 @@
+{
+	"name": "kinglozzer/bfgoogleanalytics",
+	"description": "A slimmed, trimmed & tweaked version of silverstripe-labs/silverstripe-googleanalytics. Designed for use in internal projects or where developers are the only CMS administrators; as users can break their analytics code by inserting invalid javascript.",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe-labs", "googleanalytics", "google", "silverstripe"],
+	"authors": [{
+		"name": "Loz Calver",
+		"email": "lozcalver@bigfork.co.uk"
+	}],
+	"require":
+	{
+		"silverstripe/framework": ">=3.1"
+	} 
+}

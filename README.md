@@ -1,0 +1,3 @@
+# Bigfork Google Analytics
+
+A slimmed, trimmed & tweaked version of [silverstripe-labs/silverstripe-googleanalytics](https://github.com/silverstripe-labs/silverstripe-googleanalytics). Designed for use by [Bigfork]('http://www.bigfork.co.uk') - feel free to use/modify it, just make sure that developers are the only CMS users with access to the 'Settings' section; as users can break their analytics code by inserting invalid javascript.
