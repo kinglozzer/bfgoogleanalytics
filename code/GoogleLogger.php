@@ -9,7 +9,8 @@ class GoogleLogger extends Extension {
 		if($trackingID = $config->GoogleAnalyticsTrackingID) {
 			$data = array(
 				'GoogleAnalyticsTrackingID' => $trackingID,
-				'GoogleAnalyticsParameters' => $config->GoogleAnalyticsParameters
+				'GoogleAnalyticsParameters' => $config->GoogleAnalyticsParameters,
+				'GoogleAnalyticsConstructorParameters' => $config->GoogleAnalyticsConstructorParameters
 			);
 			
 			$analyticsData = new ArrayData($data);

@@ -4,7 +4,8 @@ class GoogleConfig extends DataExtension {
 
 	private static $db = array(
 		'GoogleAnalyticsTrackingID' => 'Varchar',
-		'GoogleAnalyticsParameters' => 'Text'
+		'GoogleAnalyticsParameters' => 'Text',
+		'GoogleAnalyticsConstructorParameters' => 'Text'
 	);
 
 	/**
@@ -16,7 +17,11 @@ class GoogleConfig extends DataExtension {
 				->setRightTitle("e.g. UA-XXXXXX-X"),
 			TextareaField::create("GoogleAnalyticsParameters", "Additional Parameters")
 				->setRightTitle("<strong>Advanced users only.</strong> 
-					If you do not know what this field does, please leave it blank.")
+					If you do not know what this field does, please leave it blank."),
+			TextareaField::create("GoogleAnalyticsConstructorParameters", "Constructor Parameters")
+				->setRightTitle("<strong>Advanced users only.</strong> 
+					If you do not know what this field does, please leave it blank. An object to be
+					passed as an argument to ga.create()")
 		);
 
 		$fields->addFieldToTab("Root", Tab::create('GoogleAnalytics')->setChildren($analyticsFields));
