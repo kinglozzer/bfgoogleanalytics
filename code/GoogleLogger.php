@@ -14,7 +14,7 @@ class GoogleLogger extends Extension {
 			);
 			
 			$analyticsData = new ArrayData($data);
-			Requirements::insertHeadTags($analyticsData->renderWith('GoogleAnalyticsJSSnippet'));
+			Requirements::insertHeadTags($analyticsData->renderWith('GoogleAnalyticsJSSnippet'), 'GoogleAnalytics');
 		}
 	}
 
