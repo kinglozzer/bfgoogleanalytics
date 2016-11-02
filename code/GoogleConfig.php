@@ -23,12 +23,12 @@ class GoogleConfig extends DataExtension
     {
         $analyticsFields = FieldList::create(
             TextField::create("GoogleAnalyticsTrackingID", "Google Analytics Tracking ID")
-                ->setRightTitle("e.g. UA-XXXXXX-X"),
+                ->setDescription("e.g. UA-XXXXXX-X"),
             TextareaField::create("GoogleAnalyticsParameters", "Additional Parameters")
-                ->setRightTitle("<strong>Advanced users only.</strong>
+                ->setDescription("<strong>Advanced users only.</strong>
 					If you do not know what this field does, please leave it blank."),
             TextareaField::create("GoogleAnalyticsConstructorParameters", "Constructor Parameters")
-                ->setRightTitle("<strong>Advanced users only.</strong>
+                ->setDescription("<strong>Advanced users only.</strong>
 					If you do not know what this field does, please leave it blank. An object to be
 					passed as an argument to ga.create()")
         );
