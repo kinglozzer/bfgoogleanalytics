@@ -1,9 +1,9 @@
 ---
 Name: 'bfgoogleanalytics'
 ---
-SiteConfig:
+SilverStripe\SiteConfig\SiteConfig:
   extensions:
-    - GoogleConfig
-ContentController:
+    - BigforkGoogleAnalytics\GoogleConfig
+SilverStripe\CMS\Controllers\ContentController:
   extensions:
-    - GoogleLogger
+    - BigforkGoogleAnalytics\GoogleLogger
