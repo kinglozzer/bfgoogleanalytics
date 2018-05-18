@@ -9,11 +9,12 @@ use SilverStripe\View\Requirements;
 
 class GoogleLogger extends Extension
 {
-    /**
-     * @inheritdoc
-     */
     public function onAfterInit()
     {
+        if ($this->owner->getRequest()->getVar('CMSPreview')) {
+            return;
+        }
+
         $config = SiteConfig::current_site_config();
 
         // include the JS snippet into the frontend page markup
