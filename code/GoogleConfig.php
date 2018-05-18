@@ -2,7 +2,6 @@
 
 class GoogleConfig extends DataExtension
 {
-
     private static $db = array(
         'GoogleAnalyticsTrackingID' => 'Varchar',
         'GoogleAnalyticsParameters' => 'Text',
