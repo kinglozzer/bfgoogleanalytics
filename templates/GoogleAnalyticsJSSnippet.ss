@@ -6,11 +6,11 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 <% if $GoogleAnalyticsConstructorParameters %>
-ga('create', '{$GoogleAnalyticsTrackingID}', 'auto', {$GoogleAnalyticsConstructorParameters});
+ga('create', '{$GoogleAnalyticsTrackingID}', 'auto', {$GoogleAnalyticsConstructorParameters.RAW});
 <% else %>
 ga('create', '{$GoogleAnalyticsTrackingID}', 'auto');
 <% end_if %>
 ga('send', 'pageview');
-$GoogleAnalyticsParameters
+{$GoogleAnalyticsParameters.RAW}
 //]]>
 </script>
